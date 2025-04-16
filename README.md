@@ -1,7 +1,7 @@
 
 [![GibsonAI](https://github.com/user-attachments/assets/26bc1002-f878-4995-a6c5-eb8d5eb69c28)](https://gibsonai.com/)
 
-# MCP 😎
+# Model Context Protocol (MCP)
 
 GibsonAI's MCP server allows tools like [Cursor](https://www.cursor.com/), [Windsurf](https://windsurf.com/editor), or [Claude Desktop](https://claude.ai/download) to create and update projects on your behalf, explain how to interact with the database and hosted APIs, and even write working code for you, all within the comfort of your own IDE. This will greatly improve the context and output of these tools while working with your Gibson project(s).
 
