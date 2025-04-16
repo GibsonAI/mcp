@@ -21,12 +21,12 @@ Update the configuration to add the gibson server:
 
 ```json
 {
-    "mcpServers": {
-        "gibson": {
-            "command": "uvx",
-            "args": ["--from", "gibson-cli@latest", "gibson", "mcp", "run"]
-        }
+  "mcpServers": {
+    "gibson": {
+      "command": "uvx",
+      "args": ["--from", "gibson-cli@latest", "gibson", "mcp", "run"]
     }
+  }
 }
 ```
 
@@ -40,12 +40,12 @@ Update the configuration to add the gibson server:
 
 ```json
 {
-    "mcpServers": {
-        "gibson": {
-            "command": "uvx",
-            "args": ["--from", "gibson-cli@latest", "gibson", "mcp", "run"]
-        }
+  "mcpServers": {
+    "gibson": {
+      "command": "uvx",
+      "args": ["--from", "gibson-cli@latest", "gibson", "mcp", "run"]
     }
+  }
 }
 ```
 
@@ -59,14 +59,54 @@ Open the `claude_desktop_config.json` file and update the configuration to add t
 
 ```json
 {
-    "mcpServers": {
-        "gibson": {
-            "command": "uvx",
-            "args": ["--from", "gibson-cli@latest", "gibson", "mcp", "run"]
-        }
+  "mcpServers": {
+    "gibson": {
+      "command": "uvx",
+      "args": ["--from", "gibson-cli@latest", "gibson", "mcp", "run"]
     }
+  }
 }
 ```
+
+## Claude Code
+
+```sh
+claude mcp add gibson -- uvx --from gibson-cli@latest gibson mcp run
+```
+
+```sh
+claude mcp get gibson
+```
+
+```txt
+gibson:
+  Scope: Local (private to you in this project)
+  Type: stdio
+  Command: uvx
+  Args: --from gibson-cli@latest gibson mcp run
+  Environment:
+
+To remove this server, run: claude mcp remove "gibson" -s local
+```
+
+## VS Code + GitHub Copilot
+
+Create or open the `.vscode/mcp.json` file
+
+```json
+{
+  "inputs": [],
+  "servers": {
+    "gibson": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": ["--from", "gibson-cli@latest", "gibson", "mcp", "run"]
+    }
+  }
+}
+```
+
+See the [official docs](https://docs.github.com/en/copilot/customizing-copilot/extending-copilot-chat-with-mcp#configuring-mcp-servers-in-visual-studio-code) for more information.
 
 ## Distribution
 
