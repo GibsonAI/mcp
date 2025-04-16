@@ -68,6 +68,8 @@ Open the `claude_desktop_config.json` file and update the configuration to add t
 }
 ```
 
+See the [Claude Desktop MCP docs](https://modelcontextprotocol.io/quickstart/user) for more information.
+
 ## Claude Code Setup
 
 ```sh
