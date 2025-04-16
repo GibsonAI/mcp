@@ -49,7 +49,7 @@ Update the configuration to add the gibson server:
 }
 ```
 
-Open the `Cascade` chat and if necessary, refresh the MCP servers
+Open the `Cascade` chat and, if necessary, refresh the MCP servers
 
 ## Claude Desktop Setup
 
@@ -68,7 +68,7 @@ Open the `claude_desktop_config.json` file and update the configuration to add t
 }
 ```
 
-## Claude Code
+## Claude Code Setup
 
 ```sh
 claude mcp add gibson -- uvx --from gibson-cli@latest gibson mcp run
@@ -89,9 +89,11 @@ gibson:
 To remove this server, run: claude mcp remove "gibson" -s local
 ```
 
-## VS Code + GitHub Copilot
+## VS Code + GitHub Copilot Setup
 
 Create or open the `.vscode/mcp.json` file
+
+Update the configuration to add the gibson server:
 
 ```json
 {
@@ -106,7 +108,7 @@ Create or open the `.vscode/mcp.json` file
 }
 ```
 
-See the [official docs](https://docs.github.com/en/copilot/customizing-copilot/extending-copilot-chat-with-mcp#configuring-mcp-servers-in-visual-studio-code) for more information.
+See the official [GitHub Copilot MCP docs](https://docs.github.com/en/copilot/customizing-copilot/extending-copilot-chat-with-mcp#configuring-mcp-servers-in-visual-studio-code) for more information.
 
 ## Distribution
 
