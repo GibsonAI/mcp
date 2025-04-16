@@ -15,9 +15,47 @@ uvx --from gibson-cli@latest gibson auth login
 
 ## Cursor Setup
 
-Click `Cursor` → `Settings` → `Cursor Settings` → `MCP` and click `Add new global MCP server`
+Go to `Cursor` → `Settings` → `Cursor Settings` → `MCP` and click `Add new global MCP server`
 
 Update the configuration to add the gibson server:
+
+```json
+{
+    "mcpServers": {
+        "gibson": {
+            "command": "uvx",
+            "args": ["--from", "gibson-cli@latest", "gibson", "mcp", "run"]
+        }
+    }
+}
+```
+
+## Windsurf Setup
+
+Go to `Windsurf` → `Settings` → `Windsurf Settings` → `Cascade` and click `Add server` in the `Model Context Protocol (MCP) Servers` section
+
+In the modal, click `Add custom server`
+
+Update the configuration to add the gibson server:
+
+```json
+{
+    "mcpServers": {
+        "gibson": {
+            "command": "uvx",
+            "args": ["--from", "gibson-cli@latest", "gibson", "mcp", "run"]
+        }
+    }
+}
+```
+
+Open the `Cascade` chat and if necessary, refresh the MCP servers
+
+## Claude Desktop Setup
+
+Go to `Claude` → `Settings` → `Developer` and click `Edit Config`
+
+Open the `claude_desktop_config.json` file and update the configuration to add the gibson server:
 
 ```json
 {
