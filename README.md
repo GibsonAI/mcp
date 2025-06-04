@@ -1,9 +1,7 @@
 
 [![GibsonAI](https://github.com/user-attachments/assets/26bc1002-f878-4995-a6c5-eb8d5eb69c28)](https://gibsonai.com/)
 
-<a href="cursor://anysphere.cursor-deeplink/mcp/install?name=gibson&config=eyJjb21tYW5kIjoidXZ4IiwiYXJncyI6WyItLWZyb20iLCJnaWJzb24tY2xpQGxhdGVzdCIsImdpYnNvbiIsIm1jcCIsInJ1biJdfQ=="><img src="https://cursor.com/deeplink/mcp-install-dark.png" alt="Add gibson MCP server to Cursor" style="max-height: 32px;" /></a>
-
-# Model Context Protocol (MCP)
+# Model Context Protocol (MCP) <a href="cursor://anysphere.cursor-deeplink/mcp/install?name=gibson&config=eyJjb21tYW5kIjoidXZ4IiwiYXJncyI6WyItLWZyb20iLCJnaWJzb24tY2xpQGxhdGVzdCIsImdpYnNvbiIsIm1jcCIsInJ1biJdfQ=="><img src="https://cursor.com/deeplink/mcp-install-dark.png" alt="Add Gibson MCP server to Cursor" height="32px" align="right" /></a>
 
 GibsonAI's MCP server allows tools like [Cursor](https://www.cursor.com/), [Windsurf](https://windsurf.com/editor), or [Claude Desktop](https://claude.ai/download) to create and update projects on your behalf, explain how to interact with the database and hosted APIs, and even write working code for you, all within the comfort of your own IDE. This will greatly improve the context and output of these tools while working with your Gibson project(s).
 
@@ -15,13 +13,9 @@ You'll need to ensure you're logged in to the [Gibson CLI](https://pypi.org/proj
 uvx --from gibson-cli@latest gibson auth login
 ```
 
-## Cursor Setup
+## Cursor Setup <a href="cursor://anysphere.cursor-deeplink/mcp/install?name=gibson&config=eyJjb21tYW5kIjoidXZ4IiwiYXJncyI6WyItLWZyb20iLCJnaWJzb24tY2xpQGxhdGVzdCIsImdpYnNvbiIsIm1jcCIsInJ1biJdfQ=="><img src="https://cursor.com/deeplink/mcp-install-light.png" alt="Add Gibson MCP server to Cursor" height="32px" align="right" /></a>
 
-Click the button below to install the MCP server in Cursor:
-
-<a href="cursor://anysphere.cursor-deeplink/mcp/install?name=gibson&config=eyJjb21tYW5kIjoidXZ4IiwiYXJncyI6WyItLWZyb20iLCJnaWJzb24tY2xpQGxhdGVzdCIsImdpYnNvbiIsIm1jcCIsInJ1biJdfQ=="><img src="https://cursor.com/deeplink/mcp-install-dark.png" alt="Add gibson MCP server to Cursor" style="max-height: 32px;" /></a>
-
-Or to install manually, go to `Cursor` → `Settings` → `Cursor Settings` → `MCP` and click `Add new global MCP server`
+Click the `Add to Cursor` button above or go to `Cursor` → `Settings` → `Cursor Settings` → `MCP` and click `Add new global MCP server`
 
 Update the configuration to add the gibson server:
 
