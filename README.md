@@ -15,9 +15,7 @@ uvx --from gibson-cli@latest gibson auth login
 
 ## Cursor Setup <a href="https://dub.sh/gibson-mcp"><img src="https://cursor.com/deeplink/mcp-install-light.png" alt="Add Gibson MCP server to Cursor" height="32px" align="right" /></a>
 
-Click the `Add to Cursor` button above or go to `Cursor` → `Settings` → `Cursor Settings` → `MCP` and click `Add new global MCP server`
-
-Update the configuration to add the gibson server:
+Click the `Add to Cursor` button above or go to `Cursor` → `Settings` → `Cursor Settings` → `MCP Tools` and click `New MCP Server`. Update the configuration to include the following:
 
 ```json
 {
@@ -36,7 +34,7 @@ Go to `Windsurf` → `Settings` → `Windsurf Settings` → `Cascade` and click 
 
 In the modal, click `Add custom server`
 
-Update the configuration to add the gibson server:
+Update the configuration to include the following:
 
 ```json
 {
@@ -55,7 +53,7 @@ Open the `Cascade` chat and, if necessary, refresh the MCP servers
 
 Go to `Claude` → `Settings` → `Developer` and click `Edit Config`
 
-Open the `claude_desktop_config.json` file and update the configuration to add the gibson server:
+Open the `claude_desktop_config.json` file and update the configuration to include the following:
 
 ```json
 {
@@ -95,7 +93,7 @@ To remove this server, run: claude mcp remove "gibson" -s local
 
 Create or open the `.vscode/mcp.json` file
 
-Update the configuration to add the gibson server:
+Update the configuration to include the following:
 
 ```json
 {
