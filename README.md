@@ -39,7 +39,7 @@ uvx --from gibson-cli@latest gibson auth login
 - [VS Code + GitHub Copilot Setup](#vs-code--github-copilot-setup)
 
 
-## Cursor Setup <a href="https://dub.sh/gibson-mcp"><img src="https://cursor.com/deeplink/mcp-install-light.png" alt="Add Gibson MCP server to Cursor" height="32px" align="right" /></a>
+## Cursor Setup <a href="https://dub.sh/gibson-mcp"><img src="https://cursor.com/deeplink/mcp-install-dark.png" alt="Add Gibson MCP server to Cursor" height="32px" align="right" /></a>
 
 Click the `Add to Cursor` button above or go to `Cursor` → `Settings` → `Cursor Settings` → `MCP Tools` and click `New MCP Server`. Update the configuration to include the following:
 
