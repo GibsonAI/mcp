@@ -1,9 +1,9 @@
 
 [![GibsonAI](./assets/gibsonai-logo.png)](https://gibsonai.com/)
 
-# GibsonAI MCP Server
+# GibsonAI Model Context Protocol (MCP) Server
 
-The GibsonAI Model Context Protocol (MCP) Server provides a set of tools to MCP Clients like [Cursor](https://www.cursor.com/), [Windsurf](https://windsurf.com/editor), or [Claude Desktop](https://claude.ai/download). These clients can use these tools to interact with your [GibsonAI](https://app.gibsonai.com/) projects and databases using your natural language instructions.
+The GibsonAI MCP Server provides a set of tools to MCP Clients like [Cursor](https://www.cursor.com/), [Windsurf](https://windsurf.com/editor), or [Claude Desktop](https://claude.ai/download). These clients can use these tools to interact with your [GibsonAI](https://app.gibsonai.com/) projects and databases using your natural language instructions.
 
 You can accomplish various tasks with GibsonAI directly in your favorite IDE, for example:
 
