@@ -1,5 +1,5 @@
 
-[![GibsonAI](./assets/gibsonai-logo.png)](https://gibsonai.com/)
+[![GibsonAI](https://github.com/user-attachments/assets/26bc1002-f878-4995-a6c5-eb8d5eb69c28)](https://gibsonai.com/)
 
 # GibsonAI Model Context Protocol (MCP) Server
 
