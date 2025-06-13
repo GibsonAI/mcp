@@ -1,9 +1,27 @@
 
 [![GibsonAI](https://github.com/user-attachments/assets/26bc1002-f878-4995-a6c5-eb8d5eb69c28)](https://gibsonai.com/)
 
-# Model Context Protocol (MCP) <a href="https://dub.sh/gibson-mcp"><img src="https://cursor.com/deeplink/mcp-install-dark.png" alt="Add Gibson MCP server to Cursor" height="32px" align="right" /></a>
+# GibsonAI Model Context Protocol (MCP) Server
 
-GibsonAI's MCP server allows tools like [Cursor](https://www.cursor.com/), [Windsurf](https://windsurf.com/editor), or [Claude Desktop](https://claude.ai/download) to create and update projects on your behalf, explain how to interact with the database and hosted APIs, and even write working code for you, all within the comfort of your own IDE. This will greatly improve the context and output of these tools while working with your Gibson project(s).
+The GibsonAI MCP Server provides a set of tools to MCP Clients like [Cursor](https://www.cursor.com/), [Windsurf](https://windsurf.com/editor), or [Claude Desktop](https://claude.ai/download). These clients can use these tools to interact with your [GibsonAI](https://app.gibsonai.com/) projects and databases using your natural language instructions.
+
+You can accomplish various tasks with GibsonAI directly in your favorite IDE, for example:
+
+* Create new GibsonAI projects and design database schemas
+* View project structure, schema diagrams, a summary of tables and relationships
+* Apply schema changes and trigger automatic migrations
+* Run SQL queries against your database
+* Deploy projects to development or production environments
+* Seed tables with mock data
+* Build a full-stack apps
+
+Prompt Examples:
+
+- “Create a blogging platform schema with users, posts, and comments.”
+- “Add a foreign key from bookings to payments.”
+- “Generate mock data for the boooking destination table.”
+- “Fetch connection string for my blogging database”
+- “Explain how the tables are related in this project.”
 
 ## Authentication
 
@@ -13,7 +31,15 @@ You'll need to ensure you're logged in to the [Gibson CLI](https://pypi.org/proj
 uvx --from gibson-cli@latest gibson auth login
 ```
 
-## Cursor Setup <a href="https://dub.sh/gibson-mcp"><img src="https://cursor.com/deeplink/mcp-install-light.png" alt="Add Gibson MCP server to Cursor" height="32px" align="right" /></a>
+## Connect MCP Clients
+
+- [Cursor](#cursor-setup)
+- [Windsurf](#windsurf-setup)
+- [Claude Desktop](#claude-desktop-setup)
+- [VS Code + GitHub Copilot Setup](#vs-code--github-copilot-setup)
+
+
+## Cursor Setup <a href="https://dub.sh/gibson-mcp"><img src="https://cursor.com/deeplink/mcp-install-dark.png" alt="Add Gibson MCP server to Cursor" height="32px" align="right" /></a>
 
 Click the `Add to Cursor` button above or go to `Cursor` → `Settings` → `Cursor Settings` → `MCP Tools` and click `New MCP Server`. Update the configuration to include the following:
 
