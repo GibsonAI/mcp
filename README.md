@@ -5,7 +5,7 @@
 
 The GibsonAI MCP Server provides a set of "tools" to MCP Clients like [Cursor](https://www.cursor.com/), [Windsurf](https://windsurf.com/editor), or [Claude Desktop](https://claude.ai/download). You can use these tools to interact with your [GibsonAI](https://app.gibsonai.com/) projects, serverless databases and ready-to-use Data API using natural language commands.
 
-For example, in Claude Desktop, or any MCP Client, you can use natural language to accomplish things with GibsonAI, such as:
+You can accomplish various tasks with GibsonAI directly in your favorite IDE, for example:
 
 * Create new GibsonAI projects and design database schemas
 * View project structure, schema diagrams, a summary of tables and relationships
