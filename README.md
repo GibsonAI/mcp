@@ -36,6 +36,7 @@ uvx --from gibson-cli@latest gibson auth login
 - [Windsurf](#windsurf-setup)
 - [Claude Desktop](#claude-desktop-setup)
 - [VS Code + GitHub Copilot Setup](#vs-code--github-copilot-setup)
+- [Cline (VS Code Extension)](#cline-vs-code-extension-setup)
 
 
 ## Cursor Setup <a href="https://dub.sh/gibson-mcp"><img src="https://cursor.com/deeplink/mcp-install-dark.png" alt="Add Gibson MCP server to Cursor" height="32px" align="right" /></a>
@@ -134,6 +135,28 @@ Update the configuration to include the following:
 ```
 
 See the official [GitHub Copilot MCP docs](https://docs.github.com/en/copilot/customizing-copilot/extending-copilot-chat-with-mcp#configuring-mcp-servers-in-visual-studio-code) for more information.
+
+## Cline (VS Code Extension) Setup
+
+1. Open **Cline** in VS Code:  
+   Go to **Sidebar → Cline icon**.
+
+2. To configure MCP Servers in Cline, you need to modify the `cline_mcp_settings.json` file. Click the **MCP Servers** icon → go to **Installed** → click **Configure MCP Servers** to open the configuration file.
+
+3. Add the following `gibson` server entry inside the `mcpServers` object:
+
+```json
+{
+  "mcpServers": {
+    "gibson": {
+      "command": "uvx",
+      "args": ["--from", "gibson-cli@latest", "gibson", "mcp", "run"]
+    }
+  }
+}
+```
+
+4. Save the file. Cline should reload the configuration automatically.
 
 ## Distribution
 
