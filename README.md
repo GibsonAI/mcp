@@ -203,7 +203,7 @@ See the official [GitHub Copilot MCP docs](https://docs.github.com/en/copilot/cu
 
 ### ✅ `get_deployed_schema`
 **Title:** Get live schema  
-**Description:** Fetches the schema currently deployed to the primary hosted databases. Use this to compare against the working schema or confirm deployment to your primary database (e.g. Production)
+**Description:** Fetches the schema currently deployed to the primary hosted database. Use this to compare against the working schema or confirm deployment to your primary database (e.g. Production)
 
 ### 🧾 `query_database`
 **Title:** Run SQL queries  
