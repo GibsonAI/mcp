@@ -22,6 +22,11 @@ Prompt Examples:
 - “Fetch connection string for my blogging database”
 - “Explain how the tables are related in this project.”
 
+## Usage Examples
+
+- [Convert Images, PDF, Excel sheets, or JSON to a relational database](https://docs.gibsonai.com/guides/create-database-from-any-er-diagram-image)
+- [Automatic PR creation on GitHub for database schema change](https://docs.gibsonai.com/guides/automatic-pr-creation-for-database-schema-change)
+
 ## Authentication
 
 You'll need to ensure you're logged in to the [Gibson CLI](https://pypi.org/project/gibson-cli/) before the MCP server will work.
@@ -157,6 +162,53 @@ See the official [GitHub Copilot MCP docs](https://docs.github.com/en/copilot/cu
 ```
 
 4. Save the file. Cline should reload the configuration automatically.
+
+## 🔧 Supported Tools
+
+### 🗂 `get_projects`
+**Title:** List all existing projects  
+**Description:** Retrieves all GibsonAI projects associated with the authenticated user. Useful when the user refers to a project by name but you need the UUID. If a `.gibsonai` file exists, use it instead unless the user intends otherwise.
+
+### 🆕 `create_project`
+**Title:** Create a new project  
+**Description:** Creates a new GibsonAI project. Check for an existing `.gibsonai` file or similar project names before creation. Prompt the user to update or create the `.gibsonai` file with the new UUID.
+
+
+### 🔍 `get_project_details`
+**Title:** Fetch project metadata  
+**Description:** Returns metadata and configuration for a given project using its UUID. Ideal when working with an existing `.gibsonai` file to load project-specific context.
+
+### 🔗 `get_project_hosted_database_details`
+**Title:** Get hosted database connection details  
+**Description:** Returns credentials, connection string, dialect, and other necessary details for querying the hosted GibsonAI database. Useful for building queries or integrating with tools.
+
+### ✏️ `update_project`
+**Title:** Rename a project  
+**Description:** Updates the project name using its UUID. Currently, only the `project_name` field is supported.
+
+
+### 🧠 `submit_data_modeling_request`
+**Title:** Submit schema modeling request  
+**Description:** Submit any natural-language data modeling request (e.g., create, modify schema). This tool fully handles the request using GibsonAI's internal modeler and should be used instead of any manual schema design.
+
+
+### 🚀 `deploy_project`
+**Title:** Deploy to database(s)  
+**Description:** Triggers automatic schema migrations and deploys the current schema to all GibsonAI supported databases.
+
+
+### 📐 `get_project_schema`
+**Title:** Get working schema  
+**Description:** Retrieves the current state of the schema including unpublished or un-deployed changes.
+
+### ✅ `get_deployed_schema`
+**Title:** Get live schema  
+**Description:** Fetches the schema currently deployed to the primary hosted database. Use this to compare against the working schema or confirm deployment to your primary database (e.g. Production)
+
+### 🧾 `query_database`
+**Title:** Run SQL queries  
+**Description:** Runs the provided SQL query against a database by using the API key associated with that database. Ensure correct quoting for identifiers depending on the SQL dialect (e.g., backticks for MySQL, double quotes for PostgreSQL).
+
 
 ## Distribution
 
