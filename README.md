@@ -193,8 +193,8 @@ See the official [GitHub Copilot MCP docs](https://docs.github.com/en/copilot/cu
 
 
 ### 🚀 `deploy_project`
-**Title:** Deploy to dev/prod  
-**Description:** Triggers automatic schema migrations and deploys the current schema to both development and production environments.
+**Title:** Deploy to database(s)  
+**Description:** Triggers automatic schema migrations and deploys the current schema to all GibsonAI supported databases.
 
 
 ### 📐 `get_project_schema`
@@ -203,11 +203,11 @@ See the official [GitHub Copilot MCP docs](https://docs.github.com/en/copilot/cu
 
 ### ✅ `get_deployed_schema`
 **Title:** Get live schema  
-**Description:** Fetches the schema currently deployed to hosted databases. Use this to compare against the working schema or confirm deployment.
+**Description:** Fetches the schema currently deployed to the primary hosted databases. Use this to compare against the working schema or confirm deployment to your primary database (e.g. Production)
 
 ### 🧾 `query_database`
 **Title:** Run SQL queries  
-**Description:** Runs SQL queries against the selected environment (development or production). Ensure correct quoting for identifiers depending on the SQL dialect (e.g., backticks for MySQL, double quotes for PostgreSQL).
+**Description:** Runs the provided SQL query against a database by using the API key associated with that database. Ensure correct quoting for identifiers depending on the SQL dialect (e.g., backticks for MySQL, double quotes for PostgreSQL).
 
 
 ## Distribution
